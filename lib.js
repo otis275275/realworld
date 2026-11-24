@@ -77,16 +77,4 @@ function formatArticleSlug(title) {
   if (!title) return ''
   return String(title).toLowerCase().trim().replace(/\s+/g, '-')
 }
-function formatArticleSlugUpper(title) {
-  if (!title) return ''
-  return String(title).toUpperCase()
-}
-function formatArticleSlugTrim(title) {
-  if (!title) return ''
-  return String(title).trim()
-}
-function formatArticleSlugClean(title) {
-  if (!title) return ''
-  return String(title).replace(/[^a-zA-Z0-9]/g, '')
-}
 exports.formatArticleSlug = formatArticleSlug
